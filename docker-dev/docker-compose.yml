@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+ nodeanc:
+    build: ./
+    volumes:
+      - ../code/nodeanc:/app/code
+      - ../node_modules/:/node_modules/
+    ports:
+      - "8123:80" 
+    tty : true
+    container_name:
+      nodejs-nodeanc
