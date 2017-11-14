@@ -3,7 +3,7 @@ services:
  nodeanc:
     build: ./
     volumes:
-      - ../code/nodeanc:/app/code
+      - ../:/app
       - ../node_modules/:/node_modules/
     ports:
       - "8123:80" 

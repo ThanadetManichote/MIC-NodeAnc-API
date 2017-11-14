@@ -1,0 +1,25 @@
+{
+  "name": "mic-nodeanc-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.2",
+    "isomorphic-fetch": "2.2.1",
+    "moment": "2.19.2",
+    "nodemon": "1.12.1",
+    "request": "2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PORT=8123 ENV=production URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification URLCRON=http://api-anc.eggdigital.com/cron/notification nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git365.eggdigital.com/guanyu/MIC-NodeAnc-API.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
