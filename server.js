@@ -5,9 +5,9 @@ const querystring = require('querystring')
 const http        = require('http')
 const moment = require('moment');
 const fetch = require('isomorphic-fetch')
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser')
 const dev = process.env.ENV !== 'staging' || process.env.ENV !== 'production'
-const port        = !dev ? process.env.PORT : 80
+const port        = dev ? process.env.PORT : 80
 const URLBROADCAST = process.env.URLBROADCAST
 const URLCRON = process.env.URLCRON
 const hardcode = {"status":200,"message":"success"}
