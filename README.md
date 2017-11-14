@@ -21,6 +21,7 @@ You can use Docker with path `mic-nodeanc-api/docker-dev`
 and you can use without docker by `mic-nodeanc-api/`
 
 ```sh
+    $ npm install
     $ npm start
 ```
 
@@ -29,3 +30,11 @@ and you can use without docker by `mic-nodeanc-api/`
 - You can config env in docker with path `mic-nodeanc-api/docker-dev/Dockerfile`
 
 - You can config env without docker with path `mic-nodeanc-api/package.json`
+
+### Monitor
+
+You can monitor. you run command before request everything.
+
+```sh
+    $ node server.js | php monitor.php echo_log
+```
