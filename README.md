@@ -12,7 +12,7 @@ This is a delivery tool for anc.
 
 ### Usage && Running
 
-You can use Docker with path `mic-nodeanc-api/docker-dev`
+You can use Docker with path `mic-nodeanc-api/docker`
 
 ```sh
     $ sh start_script.sh
@@ -27,7 +27,7 @@ and you can use without docker by `mic-nodeanc-api/`
 
 ### Config Env
 
-- You can config env in docker with path `mic-nodeanc-api/docker-dev/Dockerfile`
+- You can config env in docker with path `mic-nodeanc-api/docker/Dockerfile`
 
 - You can config env without docker with path `mic-nodeanc-api/package.json`
 

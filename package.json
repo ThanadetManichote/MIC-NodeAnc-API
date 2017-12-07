@@ -1,26 +1,26 @@
 {
-  "name": "mic-nodeanc-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "1.18.2",
-    "express": "4.16.2",
-    "forever": "^0.15.3",
-    "isomorphic-fetch": "2.2.1",
-    "moment": "2.19.2",
-    "nodemon": "1.12.1",
-    "request": "2.83.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PORT=8123 ENV=production URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification URLCRON=http://api-anc.eggdigital.com/cron/notification PORT=8123 forever start server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://git365.eggdigital.com/guanyu/MIC-NodeAnc-API.git"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "mic-nodeanc-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+        "express": "4.16.2",
+        "forever": "^0.15.3",
+        "isomorphic-fetch": "2.2.1",
+        "moment": "2.19.2",
+        "nodemon": "1.12.1",
+        "request": "2.83.0",
+        "connect-multiparty": "2.1.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "forever start server.js NODE_PORT=80 NODE_ENV=production NODE_URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification NODE_URLCRON=http://api-anc.eggdigital.com/cron/notification"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://git365.eggdigital.com/guanyu/MIC-NodeAnc-API.git"
+    },
+    "author": "",
+    "license": "ISC"
 }
