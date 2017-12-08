@@ -15,7 +15,7 @@
     "devDependencies": {},
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "ENV=staging URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification URLCRON=http://api-anc.eggdigital.com/cron/notification PORT=8123 forever start server.js"
+        "start": "NODE_PORT=8123 NODE_ENV=production NODE_URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification NODE_URLCRON=http://api-anc.eggdigital.com/cron/notification forever start server.js"
     },
     "repository": {
         "type": "git",

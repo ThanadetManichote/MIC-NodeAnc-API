@@ -10,7 +10,7 @@ var multipartMiddleware = multipart();
 
 // Set port
 const dev = process.env.NODE_ENV !== 'staging' || process.env.NODE_ENV !== 'production'
-const port = dev ? process.env.NODE_PORT : 80
+const port = dev ? process.env.NODE_PORT : 8123
 
 // Set url
 const URLBROADCAST = process.env.NODE_URLBROADCAST
