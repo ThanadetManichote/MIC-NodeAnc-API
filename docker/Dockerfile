@@ -7,10 +7,9 @@ WORKDIR /app
 
 ENV NODE_PATH=/usr/local/lib/node_modules/
 ENV NODE_ENV=developer
-ENV NODE_PORT=80
+ENV NODE_PORT=8123
 ENV NODE_URLBROADCAST=http://api-anc.eggdigital.com/broadcast/notification
 ENV NODE_URLCRON=http://api-anc.eggdigital.com/cron/notification
-
 RUN npm config set cache /node_modules/ --global
 
 # RUN apt-get update && \
