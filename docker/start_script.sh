@@ -25,6 +25,6 @@ docker rm -f $(docker ps -f name=nodejs -q)
 docker-compose build --force-rm nodeanc
 docker-compose up -d nodeanc
 
-docker exec -it nodejs-nodeanc /usr/local/bin/npm install -g nodemon express request isomorphic-fetch moment connect-multiparty
+docker exec -it nodejs-nodeanc /usr/local/bin/npm install -g nodemon express request isomorphic-fetch moment connect-multiparty form-data
 
 docker exec -it nodejs-nodeanc nodemon server.js

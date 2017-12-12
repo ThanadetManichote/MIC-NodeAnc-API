@@ -77,12 +77,17 @@ const postDataFromAPI = async(req) => {
         }
 
         // Send datas to ANC
+        var FormData = require('form-data');
+        var form = new FormData();
+        for (var key in datapost) {
+            form.append(key, datapost[key]);
+        } 
+        // console.log(form)
+        
+
         const response = await fetch(url_anc, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: datapost
+            body: form
         })
         const data = await response.json()
 
