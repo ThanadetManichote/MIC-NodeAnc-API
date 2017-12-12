@@ -1,7 +1,7 @@
 FROM node:8
 
 # replace this with your application's default port
-EXPOSE 80
+EXPOSE 8123
 
 WORKDIR /app
 
